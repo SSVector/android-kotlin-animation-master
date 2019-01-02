@@ -50,13 +50,14 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_end="@dimen/dp_16" />
 
-                <com.animation.customview.widgets.CustomButton
+                <com.kotlin.customview.widgets.CustomButton
                     android:layout_width="@dimen/dp_0"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp_16"
                     android:text="TranslationScaleActivity"
+                    android:onClick="@{vm::onTranslationScaleActivityClick}"
                     android:textAllCaps="false"
-                    app:app_font="OpenSans_Bold"
+                    app:app_font="OpenSans_Regular"
                     app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
                     app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
                     app:layout_constraintTop_toTopOf="parent" />
