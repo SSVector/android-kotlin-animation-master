@@ -11,7 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".loading.LoadingActivity">
+        </activity>
         <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -22,14 +23,14 @@
         <activity
                 android:name=".dashboard.MainActivity"
                 android:screenOrientation="portrait"/>
-
-        <activity android:name=".translationScaleAnimation.TranslationScaleActivity"
+        <activity
+                android:name=".translationScaleAnimation.TranslationScaleActivity"
                 android:screenOrientation="portrait"/>
-
-        <activity android:name=".waveView.WaveViewActivity"
-                  android:screenOrientation="portrait"/>
-
-        <activity android:name=".moveViewAnimation.MoveViewActivity"
+        <activity
+                android:name=".waveView.WaveViewActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".moveViewAnimation.MoveViewActivity"
                 android:screenOrientation="portrait"/>
     </application>
 

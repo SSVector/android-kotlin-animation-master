@@ -3,6 +3,7 @@ package com.animation.master
 import android.content.Context
 import android.content.Intent
 import com.animation.master.dashboard.MainActivity
+import com.animation.master.loading.LoadingActivity
 import com.animation.master.moveViewAnimation.MoveViewActivity
 import com.animation.master.translationScaleAnimation.TranslationScaleActivity
 import com.animation.master.waveView.WaveViewActivity
@@ -27,6 +28,11 @@ object AppNavigator {
 
     fun navigateToWaveViewActivity(context: Context) {
         val intent = Intent(context, WaveViewActivity::class.java)
+        context.startActivity(intent)
+    }
+
+    fun navigateToLoadingViewActivity(context: Context) {
+        val intent = Intent(context, LoadingActivity::class.java)
         context.startActivity(intent)
     }
 

@@ -28,4 +28,8 @@
         <attr name="useAnimation" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="CradleBall">
+        <attr name="cradle_ball_color" format="color" />
+    </declare-styleable>
+
 </resources>

@@ -18,4 +18,8 @@ class MainViewModel(private val mContext: Context) {
         AppNavigator.navigateToWaveViewActivity(mContext)
     }
 
+    fun onLoadingViewActivityClick(view: View) {
+        AppNavigator.navigateToLoadingViewActivity(mContext)
+    }
+
 }
