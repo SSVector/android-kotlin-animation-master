@@ -3,6 +3,7 @@ package com.animation.master
 import android.content.Context
 import android.content.Intent
 import com.animation.master.dashboard.MainActivity
+import com.animation.master.moveViewAnimation.MoveViewActivity
 import com.animation.master.translationScaleAnimation.TranslationScaleActivity
 
 object AppNavigator {
@@ -15,6 +16,11 @@ object AppNavigator {
 
     fun navigateToTranslationScaleActivity(context: Context) {
         val intent = Intent(context, TranslationScaleActivity::class.java)
+        context.startActivity(intent)
+    }
+
+    fun navigateToMoveViewActivity(context: Context) {
+        val intent = Intent(context, MoveViewActivity::class.java)
         context.startActivity(intent)
     }
 

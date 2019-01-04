@@ -1,66 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
         <variable
-            name="vm"
-            type="com.animation.master.dashboard.MainViewModel" />
+                name="vm"
+                type="com.animation.master.dashboard.MainViewModel"/>
     </data>
 
     <android.support.design.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/mainToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+                    android:id="@+id/mainToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
         </android.support.design.widget.AppBarLayout>
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <android.support.constraint.Guideline
-                    android:id="@+id/guidelineBegin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="@dimen/dp_16" />
+                        android:id="@+id/guidelineBegin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="@dimen/dp_16"/>
 
                 <android.support.constraint.Guideline
-                    android:id="@+id/guidelineEnd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_end="@dimen/dp_16" />
+                        android:id="@+id/guidelineEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="@dimen/dp_16"/>
 
                 <com.kotlin.customview.widgets.CustomButton
-                    android:layout_width="@dimen/dp_0"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_16"
-                    android:text="TranslationScaleActivity"
-                    android:onClick="@{vm::onTranslationScaleActivityClick}"
-                    android:textAllCaps="false"
-                    app:app_font="OpenSans_Regular"
-                    app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
-                    app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/translationScaleActivity"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:text="TranslationScaleActivity"
+                        android:onClick="@{vm::onTranslationScaleActivityClick}"
+                        android:textAllCaps="false"
+                        app:app_font="OpenSans_Regular"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.kotlin.customview.widgets.CustomButton
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="MoveViewActivity"
+                        android:onClick="@{vm::onMoveViewActivityClick}"
+                        android:textAllCaps="false"
+                        app:app_font="OpenSans_Regular"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
+                        app:layout_constraintTop_toBottomOf="@+id/translationScaleActivity"/>
 
             </android.support.constraint.ConstraintLayout>
 

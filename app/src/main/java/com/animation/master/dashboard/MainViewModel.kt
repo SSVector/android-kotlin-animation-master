@@ -10,4 +10,8 @@ class MainViewModel(private val mContext: Context) {
         AppNavigator.navigateToTranslationScaleActivity(mContext)
     }
 
+    fun onMoveViewActivityClick(view: View) {
+        AppNavigator.navigateToMoveViewActivity(mContext)
+    }
+
 }
