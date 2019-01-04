@@ -23,4 +23,9 @@
         <attr name="app_font" />
     </declare-styleable>
 
+    <declare-styleable name="RoundWaveView">
+        <attr name="pointCount" format="integer" />
+        <attr name="useAnimation" format="boolean" />
+    </declare-styleable>
+
 </resources>

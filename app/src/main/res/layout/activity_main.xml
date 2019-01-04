@@ -64,6 +64,20 @@
                         app:layout_constraintTop_toTopOf="parent"/>
 
                 <com.kotlin.customview.widgets.CustomButton
+                        android:id="@+id/waveView"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="WaveViewActivity"
+                        android:onClick="@{vm::onWaveViewActivityClick}"
+                        android:textAllCaps="false"
+                        app:app_font="OpenSans_Regular"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
+                        app:layout_constraintTop_toBottomOf="@+id/translationScaleActivity"/>
+
+                <com.kotlin.customview.widgets.CustomButton
+                        android:id="@+id/moveView"
                         android:layout_width="@dimen/dp_0"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp_10"
@@ -73,7 +87,7 @@
                         app:app_font="OpenSans_Regular"
                         app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
                         app:layout_constraintStart_toStartOf="@+id/guidelineBegin"
-                        app:layout_constraintTop_toBottomOf="@+id/translationScaleActivity"/>
+                        app:layout_constraintTop_toBottomOf="@+id/waveView"/>
 
             </android.support.constraint.ConstraintLayout>
 

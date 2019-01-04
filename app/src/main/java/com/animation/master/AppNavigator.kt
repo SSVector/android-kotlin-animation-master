@@ -5,6 +5,7 @@ import android.content.Intent
 import com.animation.master.dashboard.MainActivity
 import com.animation.master.moveViewAnimation.MoveViewActivity
 import com.animation.master.translationScaleAnimation.TranslationScaleActivity
+import com.animation.master.waveView.WaveViewActivity
 
 object AppNavigator {
 
@@ -21,6 +22,11 @@ object AppNavigator {
 
     fun navigateToMoveViewActivity(context: Context) {
         val intent = Intent(context, MoveViewActivity::class.java)
+        context.startActivity(intent)
+    }
+
+    fun navigateToWaveViewActivity(context: Context) {
+        val intent = Intent(context, WaveViewActivity::class.java)
         context.startActivity(intent)
     }
 

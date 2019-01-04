@@ -14,4 +14,8 @@ class MainViewModel(private val mContext: Context) {
         AppNavigator.navigateToMoveViewActivity(mContext)
     }
 
+    fun onWaveViewActivityClick(view: View) {
+        AppNavigator.navigateToWaveViewActivity(mContext)
+    }
+
 }
